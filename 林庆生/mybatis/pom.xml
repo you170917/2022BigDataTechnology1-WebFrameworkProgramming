@@ -9,15 +9,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>homework01</artifactId>
+    <artifactId>mybatis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>homework01</name>
-    <description>homework01</description>
+    <name>mybatis</name>
+    <description>mybatis</description>
     <properties>
         <java.version>17</java.version>
     </properties>
-
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
