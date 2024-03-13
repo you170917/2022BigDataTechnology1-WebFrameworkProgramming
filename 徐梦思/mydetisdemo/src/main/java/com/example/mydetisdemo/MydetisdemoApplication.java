@@ -1,13 +1,13 @@
-package com.example.homework01;
+package com.example.mydetisdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Homework01Application {
+public class MydetisdemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Homework01Application.class, args);
+        SpringApplication.run(MydetisdemoApplication.class, args);
     }
 
 }
