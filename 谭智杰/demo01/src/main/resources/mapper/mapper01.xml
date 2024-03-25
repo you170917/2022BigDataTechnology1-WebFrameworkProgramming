@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.UserMapper">
+    <select id="getAllUsers" resultType="com.example.bean.Users">
+        select * from student;
+    </select>
+
+    <select id="getUsername" resultType="com.example.bean.Users">
+        select * from student where name = #{name};
+    </select>
+
+    <insert id="addUser" parameterType="com.example.mybatis.bean.Users">
+        insert into student values (#{name}, #{word},#{age});
+    </insert>
+    <update id="updateUser" parameterType="com.example.mybatis.bean.Users">
+        update student set word = #{word} where naem = #{name};
+    </update>
+    <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from studen where name = #{name};
+    </delete>
+
+</mapper>
+
