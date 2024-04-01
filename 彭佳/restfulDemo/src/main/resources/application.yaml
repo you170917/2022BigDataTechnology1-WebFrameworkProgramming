@@ -1,0 +1,9 @@
+# 应用服务 WEB 访问端口
+#server.port=8080
+
+spring:
+  datasource:
+    type:com.alibaba.druid.poll.DruidDataSource
+    username:root
+    password:472829
+    url:jdbc:mysql://localhost:3306/example?TimeZone=Asia/ShangHai
