@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2a9f0d-2c6f-4252-a199-33fe480660c1" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/java/com/example/homework02/Homework02Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/java/com/example/homework02/Homework02Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/java/com/example/homework02/bean/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/java/com/example/homework02/bean/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/java/com/example/homework02/mapper/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/java/com/example/homework02/mapper/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/java/com/example/homework02/mapper/MybatisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/java/com/example/homework02/mapper/MybatisApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/java/com/example/homework02/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/java/com/example/homework02/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/java/com/example/homework02/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/java/com/example/homework02/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/java/com/example/homework02/mapper/UserMapper1.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/java/com/example/homework02/mapper/UserMapper1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/test/java/com/example/homework02/Homework02ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/test/java/com/example/homework02/Homework02ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/李吉平02/homework02/src/test/java/com/example/homework02/mapper/MybatisApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/李吉平/homework02/src/test/java/com/example/homework02/mapper/MybatisApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="9b2a9f0d-2c6f-4252-a199-33fe480660c1" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/WorkSpace/IdeaProjects/2022BigDataTechnology1-WebFrameworkProgramming/李康琪/HomeWork04",
+    "last_opened_file_path": "E:/WorkSpace/IdeaProjects/2022BigDataTechnology1-WebFrameworkProgramming/李康琪",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,6 +84,7 @@
       <workItem from="1711857372094" duration="15000" />
       <workItem from="1711858034389" duration="909000" />
       <workItem from="1711896009928" duration="264000" />
+      <workItem from="1711967020468" duration="80000" />
     </task>
     <servers />
   </component>
