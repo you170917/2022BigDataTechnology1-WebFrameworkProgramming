@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a0facedc-c34d-4e7b-9878-fdafcbdf492a" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/../2022BigDataTechnology1-WebFrameworkProgramming" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/src/main/java/com/example/homework/HomeworkApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/src/main/java/com/example/homework/demos/web/BasicController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/src/main/java/com/example/homework/demos/web/PathVariableController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/src/main/java/com/example/homework/demos/web/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework/src/test/java/com/example/homework/HomeworkApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mapper" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2dWZlghR0vg4UqVjscpZ2zcVxOL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a0facedc-c34d-4e7b-9878-fdafcbdf492a" name="更改" comment="" />
+      <created>1710125950462</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710125950462</updated>
+      <workItem from="1710125951639" duration="3184000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
