@@ -1,0 +1,11 @@
+# 应用服务 WEB 访问端口
+spring:
+  mvc:
+    path match:
+      matching-strategy: ant-path-matcher
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 20030105
+    url: jdbc:mysql://localhost:3306/mybd?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+
