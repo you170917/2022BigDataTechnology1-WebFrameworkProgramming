@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @Api(tags = "用户相关接口")
-//@RequestMapping("/user")
+@RequestMapping("/user")
 public class UserController {
     @Autowired
     UserService userService;
@@ -22,13 +22,13 @@ public class UserController {
         return userList;
     }
     @ApiOperation("根据id获取指定用户")
-    @GetMapping("/user/{Id}")
+    @GetMapping("/id/{Id}")
     public User getUserById(@PathVariable("id") Integer id){
         User user = userService.getById(id);
         return user;
     }
     @ApiOperation("添加用户")
-    @PostMapping("/user")
+    @PostMapping("/add")
     public String addUser(@RequestBody User user){
         if(userService.save(user)){
             return "添加用户成功！";
@@ -36,7 +36,7 @@ public class UserController {
         else return "添加用户失败！";
     }
     @ApiOperation("修改用户")
-    @PutMapping("/user")
+    @PutMapping("/up")
     public String updateUser(@RequestBody User user){
         if(userService.updateById(user)){
             return "修改用户成功！";
@@ -44,7 +44,7 @@ public class UserController {
         else return "修改用户失败！";
     }
     @ApiOperation("删除用户")
-    @DeleteMapping("/user")
+    @DeleteMapping("/del")
     public String deleteUser(Integer id){
         if(userService.removeById(id)){
             return "删除用户成功！";
