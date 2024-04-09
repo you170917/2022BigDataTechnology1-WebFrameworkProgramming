@@ -10,6 +10,8 @@ spring:
 
   application:
     name: demo_01
+
+#    swagger2注释需要的...
   mvc:
     pathmatch:
         matching-strategy: ant-path-matcher
