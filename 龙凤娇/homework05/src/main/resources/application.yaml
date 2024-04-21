@@ -1,3 +1,4 @@
+
 spring:
     datasource:
       type: com.alibaba.druid.pool.DruidDataSource
@@ -7,3 +8,5 @@ spring:
     mvc:
       pathmatch:
         matching-strategy: ant-path-matcher
+server:
+  port: 8089
