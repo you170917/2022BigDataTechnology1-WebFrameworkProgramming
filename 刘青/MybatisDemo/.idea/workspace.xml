@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e30ed292-a15a-4eda-aa13-0d18ee3c313e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatisdemo/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatisdemo/MybatisDemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatisdemo/bean/Users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatisdemo/demos/web/BasicController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatisdemo/demos/web/PathVariableController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mybatisdemo/demos/web/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mybatisdemo/MybatisDemoApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework05/src/main/java/com/example/homework05/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +48,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "9fd43749af876e2402713edc5054c65a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710124564233</updated>
       <workItem from="1710124565690" duration="10488000" />
+      <workItem from="1711939884148" duration="21000" />
     </task>
     <servers />
   </component>

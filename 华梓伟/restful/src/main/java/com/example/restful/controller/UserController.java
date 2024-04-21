@@ -14,12 +14,13 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/AllUsers")
+    @CrossOrigin(origins = "http://localhost:8081")
     public List<User> getAllusers() {
         List<User> userList = userService.list();
         return userList;
     }
-
     @GetMapping("/user/{id}")
+    @CrossOrigin(origins = "http://localhost:8081")
     public User getUserById(@PathVariable("id") Integer id) {
         User user = userService.getById(id);
         return user;
@@ -27,6 +28,7 @@ public class UserController {
 
     @PostMapping("/user")
     @ApiOperation(("插入用户"))
+    @CrossOrigin(origins = "http://localhost:8081")
     public String addUser(@RequestBody User user) {
         if (userService.save(user)) {
             return "插入用户成功！";
@@ -36,6 +38,7 @@ public class UserController {
 
     @PutMapping("/user")
     @ApiOperation(("修改用户"))
+    @CrossOrigin(origins = "http://localhost:8081")
     public String updateUser(@RequestBody User user) {
         if (userService.updateById(user)) {
             return "更新用户成功！";
@@ -45,6 +48,7 @@ public class UserController {
 
     @DeleteMapping("/user")
     @ApiOperation(("删除用户"))
+    @CrossOrigin(origins = "http://localhost:8081")
     public String deleteUserById(Integer id) {
         if (userService.removeById(id)) {
             return "删除用户成功！";
