@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: ds123456
+    url: jdbc:mysql://localhost:3306/example?serverTimeZone=UTC&useUnicode=true&characterEncoding=UTF-8
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
