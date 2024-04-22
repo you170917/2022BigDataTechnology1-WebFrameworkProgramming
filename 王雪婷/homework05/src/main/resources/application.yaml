@@ -1,4 +1,5 @@
-# 应用服务 WEB 访问端口
+server:
+  port: 8081
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -6,5 +7,5 @@ spring:
     password: Wxtwxtwxt123..
     url: jdbc:mysql://localhost:3306/example?serverTimeZone=Asia/Shanghai
   mvc:
-  pathmatch:
-  matching-strategy: ant-path-matcher
+    pathmatch:
+      matching-strategy: ant-path-matcher
