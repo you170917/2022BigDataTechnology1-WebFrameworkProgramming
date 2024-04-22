@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2a9f0d-2c6f-4252-a199-33fe480660c1" name="更改" comment="" />
+    <list default="true" id="9b2a9f0d-2c6f-4252-a199-33fe480660c1" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/components/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/components/utils/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/components/views/ NotFound.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/components/views/NotFound.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/components/views/User.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/夏远武/homework06~7/vue1/vue.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,6 +50,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -46,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/WorkSpace/IdeaProjects/2022BigDataTechnology1-WebFrameworkProgramming/李康琪",
+    "last_opened_file_path": "D:/作业1/2022BigDataTechnology1-WebFrameworkProgramming/夏远武/homework06~7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +91,7 @@
       <recent name="com.example.mybatisplusdemo.bean" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\作业1\2022BigDataTechnology1-WebFrameworkProgramming\夏远武\homework06~7" />
       <recent name="E:\WorkSpace\IdeaProjects\2022BigDataTechnology1-WebFrameworkProgramming\李康琪\HomeWork04" />
     </key>
   </component>
