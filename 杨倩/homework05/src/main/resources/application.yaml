@@ -1,0 +1,15 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/example
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: yangqian0916
+
+
+server:
+  address: localhost
+  port: 8080
