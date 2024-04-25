@@ -1,4 +1,4 @@
-# vue04
+# homework06
 
 ## Project setup
 ```
