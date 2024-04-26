@@ -13,10 +13,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
     @Bean
-    public Docket createRestApi(){
+    public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.restful.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.homework05.controller"))
                 .paths(PathSelectors.any())
                 .build().apiInfo(new ApiInfoBuilder()
                         .title("这是接口文档网站的标题")
@@ -24,3 +24,4 @@ public class SwaggerConfig {
                         .build());
     }
 }
+
