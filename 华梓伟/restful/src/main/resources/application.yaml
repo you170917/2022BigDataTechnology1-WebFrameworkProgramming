@@ -1,5 +1,8 @@
 # 应用服务 WEB 访问端口
+mybatis-plus:
+  mapper-locations: classpath :/AccountMapper/*.xml
 spring:
+
   mvc:
     path match:
       matching-strategy: ant-path-matcher
@@ -8,4 +11,3 @@ spring:
     username: root
     password: 20030105
     url: jdbc:mysql://localhost:3306/mybd?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
-
