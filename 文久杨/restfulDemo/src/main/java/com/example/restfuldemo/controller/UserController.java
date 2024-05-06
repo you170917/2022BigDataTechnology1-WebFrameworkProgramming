@@ -2,52 +2,69 @@ package com.example.restfuldemo.controller;
 
 import com.example.restfuldemo.model.User;
 import com.example.restfuldemo.service.UserService;
+import com.example.restfuldemo.util.Result;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.ibatis.annotations.Delete;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@Api(tags = "用户管理相关接口")
 public class UserController {
-
     @Autowired
     UserService userService;
-    @ApiOperation(("查询所有用户"))
     @GetMapping("/AllUsers")
-    public List<User> getAllUsers(){
-        List<User> userList=userService.list();
-        return userList;
+    @CrossOrigin(origins = "http://localhost:8081")
+    @ApiOperation("查询所有用户")
+    public Result getAllUsers(){
+        List<User> userList = userService.list();
+        if (!userList.isEmpty()){
+            return Result.success(userList);
+        }else {
+            return Result.error("查询所有用户失败!");
+        }
     }
-    @ApiOperation(("根据id查询指定用户"))
     @GetMapping("/user/{id}")
-    public User getUserById(@PathVariable("id") Integer id){
+    @CrossOrigin(origins = "http://localhost:8081")
+
+    @ApiOperation(("根据 id 查询指定用户"))
+    public Result getUserById(@PathVariable("id") Integer id){
         User user = userService.getById(id);
-        return user;
+        return Result.success(user);
     }
-    @ApiOperation(("插入用户"))
     @PostMapping("/user")
-    public String addUser(@RequestBody User user){
+    @CrossOrigin(origins = "http://localhost:8081")
+
+    @ApiOperation(("插入用户"))
+    public Result addUser(@RequestBody User user){
         if (userService.save(user)){
-            return "添加用户成功";
+            return Result.success("插入用户成功！");
         }
-        else return "添加用户失败";
+        else return Result.error("插入用户失败");
     }
-    @ApiOperation(("修改用户"))
     @PutMapping("/user")
-    public String updateUser(@RequestBody User user){
+    @CrossOrigin(origins = "http://localhost:8081")
+
+    @ApiOperation(("修改用户"))
+    public Result updateUser(@RequestBody User user){
         if (userService.updateById(user)){
-            return "修改成功";
+            return Result.success("更新用户成功！");
         }
-        else return "修改失败";
+        else return Result.error("更新用户失败");
     }
-    @ApiOperation(("删除用户"))
+
     @DeleteMapping("/user")
-    public String deleteUser(Integer id){
+    @CrossOrigin(origins = "http://localhost:8081")
+
+    @ApiOperation(("删除用户"))
+    public Result deleteUserById(Integer id){
         if (userService.removeById(id)){
-            return "删除成功";
+            return Result.success("删除用户成功！");
         }
-        else return "删除失败";
+        else return Result.error("删除用户失败！");
     }
 }
