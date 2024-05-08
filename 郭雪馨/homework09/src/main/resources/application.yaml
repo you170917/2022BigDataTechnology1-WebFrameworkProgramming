@@ -1,0 +1,8 @@
+
+spring:
+  security:
+    user:
+      name: root
+      password: 1128yyqx
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
