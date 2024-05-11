@@ -5,8 +5,6 @@ import com.example.restfuldemo.service.UserService;
 import com.example.restfuldemo.util.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.apache.ibatis.annotations.Delete;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,8 +15,12 @@ import java.util.List;
 public class UserController {
     @Autowired
     UserService userService;
+    @GetMapping("/test")
+    public String test(){
+        return "Test";
+    }
     @GetMapping("/AllUsers")
-    @CrossOrigin(origins = "http://localhost:8081")
+    @CrossOrigin(origins = "http://localhost:8011")
     @ApiOperation("查询所有用户")
     public Result getAllUsers(){
         List<User> userList = userService.list();
@@ -29,16 +31,14 @@ public class UserController {
         }
     }
     @GetMapping("/user/{id}")
-    @CrossOrigin(origins = "http://localhost:8081")
-
+    @CrossOrigin(origins = "http://localhost:8011")
     @ApiOperation(("根据 id 查询指定用户"))
     public Result getUserById(@PathVariable("id") Integer id){
         User user = userService.getById(id);
         return Result.success(user);
     }
     @PostMapping("/user")
-    @CrossOrigin(origins = "http://localhost:8081")
-
+    @CrossOrigin(origins = "http://localhost:8011")
     @ApiOperation(("插入用户"))
     public Result addUser(@RequestBody User user){
         if (userService.save(user)){
@@ -47,7 +47,7 @@ public class UserController {
         else return Result.error("插入用户失败");
     }
     @PutMapping("/user")
-    @CrossOrigin(origins = "http://localhost:8081")
+    @CrossOrigin(origins = "http://localhost:8011")
 
     @ApiOperation(("修改用户"))
     public Result updateUser(@RequestBody User user){
@@ -58,7 +58,7 @@ public class UserController {
     }
 
     @DeleteMapping("/user")
-    @CrossOrigin(origins = "http://localhost:8081")
+    @CrossOrigin(origins = "http://localhost:8011")
 
     @ApiOperation(("删除用户"))
     public Result deleteUserById(Integer id){
