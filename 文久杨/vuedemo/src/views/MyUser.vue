@@ -40,7 +40,7 @@
                           style="width:200px;"></el-input>
               </el-form-item>
               <el-form-item>
-                <el-button type="primary" v￾on:click="getUserById">查询</el-button>
+                <el-button type="primary" v-on:click="getUserById">查询</el-button>
               </el-form-item>
             </el-form>
             <el-table
@@ -93,7 +93,7 @@
                           style="width:200px;"></el-input>
               </el-form-item>
               <el-form-item>
-                <el-button type="primary" v￾on:click="updateUser">更新</el-button>
+                <el-button type="primary" v-on:click="updateUser">更新</el-button>
               </el-form-item>
             </el-form>
           </el-tab-pane>
@@ -104,7 +104,7 @@
                           style="width:200px;"></el-input>
               </el-form-item>
               <el-form-item>
-                <el-button type="primary" v￾on:click="deleteUserById">删除</el-button>
+                <el-button type="primary" v-on:click="deleteUserById">删除</el-button>
               </el-form-item>
             </el-form>
           </el-tab-pane>
@@ -114,6 +114,8 @@
   </div>
 </template>
 <script>
+import {deleteRequest,getRequest,postRequest,putRequest} from "@/utils/api";
+
 export default {
   name: "MyUser",
   data(){
@@ -137,21 +139,22 @@ export default {
     this.getAllUsers();
   },
   methods: {
-    getAllUsers(){
-      this.getRequest("/AllUsers").then(resp => {
-        if (resp.data.code == 200){
+    async getAllUsers() {
+      await getRequest("/AllUsers")
+          .then(resp => {
+        if (resp.data.code === 200) {
           this.$message.success("刷新成功!");
           this.users = resp.data.data;
-        }else {
+        } else {
           alert(resp.data.msg);
         }
       })
     },
-    getUserById(){
-      this.getRequest(`/user/${this.queryId}`).then(resp => {
+    async getUserById(){
+      await getRequest(`/user/${this.queryId}`).then(resp => {
         console.log(resp);
-        if (resp.data.code == 200){
-          if (this.userInfo.length == 0){
+        if (resp.data.code === 200){
+          if (this.userInfo.length === 0){
             this.userInfo.push(resp.data.data);
           }else {
             this.userInfo.length =0;
@@ -162,41 +165,44 @@ export default {
         }
       })
     },
-    addUser(){
-      this.postRequest("/user", {
+    async addUser() {
+      await postRequest("/user", {
         username: this.addUserParams.username,
         address: this.addUserParams.address
       }).then(resp => {
-        if (resp.data.code == 200){
+        if (resp.data.code === 200) {
           console.log(resp);
           this.$message.success("添加成功!")
-        }else {
+        } else {
           this.$message.error("添加失败!")
         }
       })
+          .catch(err=>{
+            console.log(err)
+          })
     },
-    updateUser(){
-      this.putRequest("/user", {
+    async updateUser() {
+      await putRequest("/user", {
         id: this.updateUserParams.id,
         username: this.updateUserParams.username,
         address: this.updateUserParams.address
       }).then(resp => {
-        if (resp.data.code == 200){
+        if (resp.data.code === 200) {
           console.log(resp);
           this.$message.success("更新成功!");
-        }else {
+        } else {
           this.$message.error("更新失败!");
         }
       })
     },
 
-deleteUserById(){
-  this.deleteRequest("/user", {
+async deleteUserById() {
+  await deleteRequest("/user", {
     id: this.deleteId
   }).then(resp => {
-    if (resp.data.code == 200){
+    if (resp.data.code === 200) {
       this.$message.success("删除成功!")
-    }else {
+    } else {
       this.$message.error("删除失败!");
     }
   })

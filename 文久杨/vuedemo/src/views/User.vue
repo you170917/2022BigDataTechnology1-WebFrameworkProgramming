@@ -57,11 +57,13 @@
       </div>
 </template>
 <script>
-import axios from "axios";
+// import axios from "axios";
+import {deleteRequest, getRequest, postRequest, putRequest} from "@/utils/api";
 export default {
   name: "UserPage",
   data(){
     return{
+
       addUserParams:{
         username: null,
         address: null,
@@ -74,40 +76,23 @@ export default {
       users: null,
       queryId: null,
       userById: null,
-      deleteId: null
+      username:null,
+      address:null,
+      id:null,
+      deleteId: null,
     }
   },
   methods: {
-    getAllUsers(){
-      this.getRequest("/AllUsers").then(resp => {
-        console.log(resp);
-        if (resp.status == 200){
-          this.users = resp.data.data;
-        }else {
-          alert(resp.data.msg);
-        }
-      })
-    },
-    getUserById(){
-      this.getRequest(`/user/${this.queryId}`).then(resp => {
-        console.log(resp);
-        if (resp.status == 200){
-          this.userById = resp.data.data;
-        }else {
-          alert(resp.data.msg);
-        }
-      })
-    },
-    addUser(){
-      this.postRequest("/user", {
+    async addUser() {
+      await postRequest("/user", {
         username: this.username,
         address: this.address
       }).then(resp => {
         console.log(resp);
       })
     },
-    updateUser(){
-      this.putRequest("/user", {
+    async updateUser() {
+      await putRequest("/user", {
         id: this.id,
         username: this.username,
         address: this.address
@@ -115,8 +100,28 @@ export default {
         console.log(resp);
       })
     },
-    deleteUser(){
-      this.deleteRequest("/user", {
+    async getAllUsers() {
+      await getRequest("/AllUsers").then(resp => {
+        console.log(resp);
+        if (resp.status == 200) {
+          this.users = resp.data.data;
+        } else {
+          alert(resp.data.msg);
+        }
+      })
+    },
+    async getUserById() {
+      await getRequest(`/user/${this.queryId}`).then(resp => {
+        console.log(resp);
+        if (resp.status == 200) {
+          this.userById = resp.data.data;
+        } else {
+          alert(resp.data.msg);
+        }
+      })
+    },
+    async deleteUser() {
+      await deleteRequest("/user", {
         id: this.deleteId
       }).then(resp => {
         console.log(resp);
