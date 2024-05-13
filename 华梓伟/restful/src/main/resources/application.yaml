@@ -1,7 +1,20 @@
 # 应用服务 WEB 访问端口
 mybatis-plus:
-  mapper-locations: classpath :/AccountMapper/*.xml
+  mapper-locations: classpath:/mapper/*.xml
+file:
+   upload:
+     url:
 spring:
+  servlet:
+      multipart:
+        enabled: true
+        max-file-size: 20MB
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 2890844749@qq.com #这里填你的邮箱
+    password: grfhgacoszntdhed #这里填你的授权码
+    default-encoding: UTF-8
 
   mvc:
     path match:
@@ -11,3 +24,4 @@ spring:
     username: root
     password: 20030105
     url: jdbc:mysql://localhost:3306/mybd?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+

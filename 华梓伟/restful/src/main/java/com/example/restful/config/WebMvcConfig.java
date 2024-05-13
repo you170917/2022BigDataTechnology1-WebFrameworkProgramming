@@ -13,7 +13,8 @@ public abstract class WebMvcConfig implements WebMvcConfigurer {
         registry.addMapping("")
                 .allowedOrigins("http://localhost:8081")
                 .allowedMethods("*")
-                .exposedHeaders("*");
+                .exposedHeaders("*")
+                .allowCredentials(true);
     }
 
     protected abstract void configure(AuthenticationManagerBuilder auth) throws Exception;
