@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b2a9f0d-2c6f-4252-a199-33fe480660c1" name="更改" comment="" />
+    <list default="true" id="9b2a9f0d-2c6f-4252-a199-33fe480660c1" name="更改" comment="罗成龙第八次提交" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,6 +31,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -46,13 +52,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/WorkSpace/IdeaProjects/2022BigDataTechnology1-WebFrameworkProgramming/李康琪",
+    "last_opened_file_path": "C:/Users/白小纯/Desktop/2022BigDataTechnology1-WebFrameworkProgramming/罗成龙",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "http.proxy",
+    "ts.external.directory.path": "C:\\IntelliJ IDEA 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -66,6 +73,8 @@
       <recent name="com.example.mybatisplusdemo.bean" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\白小纯\Desktop\2022BigDataTechnology1-WebFrameworkProgramming\罗成龙" />
+      <recent name="D:\作业1\2022BigDataTechnology1-WebFrameworkProgramming\夏远武\homework06~7" />
       <recent name="E:\WorkSpace\IdeaProjects\2022BigDataTechnology1-WebFrameworkProgramming\李康琪\HomeWork04" />
     </key>
   </component>
@@ -85,7 +94,18 @@
       <workItem from="1711858034389" duration="909000" />
       <workItem from="1711896009928" duration="264000" />
       <workItem from="1711967020468" duration="80000" />
+      <workItem from="1714963826350" duration="1406000" />
+      <workItem from="1715138047135" duration="314000" />
     </task>
+    <task id="LOCAL-00001" summary="罗成龙第八次提交">
+      <option name="closed" value="true" />
+      <created>1715138146877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715138146877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,5 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="罗成龙第八次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="罗成龙第八次提交" />
   </component>
 </project>

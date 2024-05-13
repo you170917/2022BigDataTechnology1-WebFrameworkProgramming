@@ -20,6 +20,7 @@ public class UserController {
      */
     @GetMapping("/AllUsers")
     @ApiOperation("查询所有用户")
+    @CrossOrigin(origins = "http://localhost:8080")
     public List<User> getAllUsers(){
         List<User> users = userService.list();
         return users;
