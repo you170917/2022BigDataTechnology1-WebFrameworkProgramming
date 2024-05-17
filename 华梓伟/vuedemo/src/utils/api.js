@@ -1,5 +1,6 @@
 import axios from "axios";
-let baseUrl = "http://localhost:8080";
+let baseUrl = "/api";
+axios.defaults.withCredentials = true;
 
 export const getRequest = (url, params) => {
     return axios({
@@ -29,5 +30,22 @@ export const deleteRequest = (url, params) => {
         method: "delete",
         url: `${baseUrl}${url}`,
         params: params,
+    })
+}
+export const postKeyValueRequest=(url, params)=>{
+    return axios({
+        method: "post",
+        url: `${baseUrl}${url}`,
+        data: params,
+        transformRequest: [function (data) {
+            let ret = '';
+            for (let i in data){
+                ret += encodeURIComponent(i)+"="+ encodeURIComponent(data[i]) + "&";
+            }
+            return ret;
+        }],
+        header: {
+            "Content-Type": "application/x-www-urlencoded"
+        }
     })
 }

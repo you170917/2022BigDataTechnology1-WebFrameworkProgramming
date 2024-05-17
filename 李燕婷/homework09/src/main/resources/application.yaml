@@ -1,0 +1,17 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: 921328
+  datasource:
+    username: root
+    password: 613128
+    url: jdbc:mysql://localhost:3306/example?serverTimeZone=Asia/Shanghai
+    type: com.mysql.cj.jdbc.MysqlDataSource
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+trace: true

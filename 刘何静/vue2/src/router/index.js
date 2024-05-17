@@ -1,30 +1,33 @@
-import Vue from "vue"; //导入 Vue 模块
-import VueRouter from "vue-router";
-import User from "@/views/User.vue";
-import NotFound from "@/views/NotFound.vue";
-// 第二步：导入 VueRouter 模块
-Vue.use(VueRouter); //第三步：Vue.use 安装注册
-const routes=[
-    {
-        path:"/user",
-        component: User
+import { createRouter, createWebHistory } from 'vue-router'
 
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/:pathMatch(.*)*',
+      name: '404',
+      component:()=>import("../views/NotFound.vue")
     },
     {
-        path:"/",
-        redirect:"/user"
+      path: "/",
+      redirect: '/user'
     },
     {
-        path:"*",
-        component: NotFound
+      path: '/user',
+      name: 'user',
+      component: () => import('../views/User.vue')
     },
     {
-        path:"/",
-        component:()=>import("@/views/Home.vue")
+      path: "/home",
+      name: "home",
+      component:() => import("../views/Home.vue")
+    },
+    {
+      path: "/myuser",
+      name: "myuser",
+      component:()=>import("../views/MyUser.vue")
     }
-]
-const router = new VueRouter({ //第四步：创建 VueRouter 对象
-    routes:routes
-    //routes
-});
-export default router//导出此模块
+  ]
+})
+
+export default router

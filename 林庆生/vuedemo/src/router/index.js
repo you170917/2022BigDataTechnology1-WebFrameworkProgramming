@@ -2,11 +2,16 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import User from "@/views/User.vue";
 import NotFound from "@/views/NotFound.vue";
+import MyUser from "@/views/MyUser.vue";
 Vue.use(VueRouter);
 const routes = [
     {
-        path: "/user", //访问路径
+        path: "/myUser", //访问路径
         component: User //对应的组件
+    },
+    {
+        path: "/myUser",
+        component: MyUser
     },
     {
         path: "/",
