@@ -2,8 +2,8 @@ package com.example.restful.mapper;
 
 
 import com.example.restful.model.Account;
+import com.example.restful.model.Role;
 
-import javax.management.relation.Role;
 import java.util.List;
 
 public interface AccountMapper {

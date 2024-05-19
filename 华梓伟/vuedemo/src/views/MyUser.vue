@@ -1,4 +1,4 @@
-<template>
+<template >
   <div>
     <el-container class="app-main-wrap">
       <el-header>
