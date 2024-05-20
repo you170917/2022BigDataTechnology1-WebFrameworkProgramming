@@ -6,6 +6,27 @@ spring:
       password: root
       url: jdbc:mysql://localhost:3306?serverTimeZone=UTC&useUnicode=true&characterEncoding=UTF-8
 
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+
+  security:
+    user:
+    name: admin
+    password: 123456
+
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 2425683342@qq.com  #这里填你的邮箱
+    password: cuhaeftjlcdnebcf #这里填你的授权码
+    default-encoding: UTF-8
+
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
