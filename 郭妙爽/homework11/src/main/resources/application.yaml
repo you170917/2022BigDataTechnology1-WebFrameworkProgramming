@@ -1,0 +1,32 @@
+spring:
+  file:
+    upload:
+      url: /Users/nelan/Desktop/test
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 2452903674@qq.com
+    password: jbkuyrnrjdcbebej
+    default-encoding: UTF-8
+  security:
+    user:
+      name: admin
+      password: 123456
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      username: root
+      password: 18819903925s
+      url: jdbc:mysql://localhost:3306/example?serverTimeZone=Asia/Shanghai
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  server:
+    port: http://localhost:8081/#/user
+  mybatis-plus:
+    mapper-locations: classpath:/mapper/*.xml
+

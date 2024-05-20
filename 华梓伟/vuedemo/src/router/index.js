@@ -3,12 +3,11 @@ import VueRouter from "vue-router";
 import User from "@/views/User.vue";
 import NotFound from "@/views/NotFound.vue";
 import MyUser from "@/views/MyUser.vue";
+import Login from "@/views/Login.vue";
+import Home from "@/views/Home.vue";
+
 Vue.use(VueRouter);
 const routes = [ //定义一个路由规则数组
-    {
-        path: "/",
-        redirect:"/myUser"
-    },
 
     {
         path: "/user",
@@ -21,6 +20,14 @@ const routes = [ //定义一个路由规则数组
     {
         path: "/myUser",
         component: MyUser
+    },
+    {
+        path: "/home",
+        component: Home
+    },
+    {
+        path: "/",
+        component: Login
     }
 
 ]
