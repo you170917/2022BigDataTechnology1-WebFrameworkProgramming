@@ -1,5 +1,4 @@
 <script>
-import axios from "axios";
 export default {
   name: "UserPage",
   data(){
@@ -9,8 +8,7 @@ export default {
       userById: null,
       username: null,
       address: null,
-      addUserParams:
-    {
+      addUserParams: {
         username: null,
         address: null,
       },
@@ -47,7 +45,7 @@ export default {
       //     })
       this.getRequest(`/user/${this.queryId}`).then(resp => {
         console.log(resp);
-        if (resp.status == 200){
+        if (resp.status === 200){
           this.userById = resp.data.data;
         }else {
           alert(resp.data.msg);

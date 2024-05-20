@@ -1,5 +1,7 @@
 import axios from "axios";
-let baseUrl = "http://localhost:8081";
+// let baseUrl = "/api";
+let baseUrl = "http://localhost:8080";
+axios.defaults.withCredentials = true;
 // 封装 GET 请求
 export const getRequest = (url, params) => {
     return axios({
@@ -14,6 +16,24 @@ export const postRequest = (url, params) => {
         method: "post",
         url: `${baseUrl}${url}`,
         data: params
+    })
+}
+export const postKeyValueRequest=(url, params) =>{
+    return axios({
+        method: "post",
+        url: `${baseUrl}${url}`,
+        data: params,
+        transformRequest: [function (data) {
+            let ret = '';
+            for (let i in data){
+                ret += encodeURIComponent(i)+"="+ encodeURIComponent(data[i]) +
+                    "&";
+            }
+            return ret;
+        }],
+        header: {
+            "Content-Type": "application/x-www-urlencoded"
+        }
     })
 }
 // 封装 PUT 请求
