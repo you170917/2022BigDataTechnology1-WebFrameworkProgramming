@@ -12,7 +12,7 @@
         </el-input>
       </el-form-item>
       <el-checkbox label="记住我" v-model="checked"></el-checkbox>
-      <el-button type="primary" style="width: 100%; margin-top: 5px">登录
+      <el-button type="primary" style="width: 100%; margin-top: 5px" v-on:click="onsubmitlogin">登录
       </el-button>
     </el-form>
   </div>
@@ -33,6 +33,26 @@ export default {
         password: ""
       },
       checked: true
+    },
+      methods: {
+      submitLogin(){
+        this.$refs.loginForm.validate((valid) =>{
+          if (valid){
+            this.postKeyValueRequest("/login", this.loginData).then(resp =>{
+              if (resp){
+                window.sessionStorage.setItem("account",
+                    JSON.stringify(resp.obj));
+                this.$router.replace("/home");
+                this.$message.success("登录成功!")
+              }
+            })
+          }
+          else {
+            this.$message.error('请输入所有字段');
+            return false;
+          }
+        })
+      }
     }
   }
 
