@@ -7,6 +7,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.CredentialsExpiredException;
 import org.springframework.security.authentication.DisabledException;
@@ -22,17 +26,20 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
 import javax.security.auth.login.AccountExpiredException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    AccountService accountService;
+     JavaMailSender javaMailSender;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
@@ -51,21 +58,30 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .loginPage("/login")
                 .successHandler(new AuthenticationSuccessHandler() {
                     @Override
-                    public void onAuthenticationSuccess(HttpServletRequest
-                                                                httpServletRequest, HttpServletResponse httpServletResponse, Authentication
-                                                                authentication) throws IOException, ServletException {
-
-                        httpServletResponse.setContentType("application/json;charset=utf-8");
+                    public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {httpServletResponse.setContentType("application/json;charset=utf-8");
                         PrintWriter writer = httpServletResponse.getWriter();
-                        Account account = (Account)
-                                authentication.getPrincipal();
+                        Account account = (Account) authentication.getPrincipal();
                         account.setPassword(null);
                         Result ok = Result.success("登录成功！", account);
-                        String string = new
-                                ObjectMapper().writeValueAsString(ok);
-                        writer.write(string);
-                        writer.flush();
+                        String string = new ObjectMapper().writeValueAsString(ok);
+                        writer.write(string);writer.flush();
                         writer.close();
+                        try {
+                            MimeMessage mimeMessage = javaMailSender.createMimeMessage();
+                            MimeMessageHelper helper = new MimeMessageHelper(mimeMessage,true);
+                            helper.setSubject("账户登录提醒");
+                            helper.setFrom("2425683342@qq.com");
+                            helper.setTo("2825914213@qq.com");
+                            Date date = new Date();
+                            helper.setSentDate(date);
+                            helper.setText("<p>您的账号已于 " + date.toString() + " 进行登录!</p><img
+                                    src='cid:p1'/>", true);
+                                    helper.addInline("p1",new
+                                            FileSystemResource("C:\\Users\\linwei\\Desktop\\1.jpg"));
+                            javaMailSender.send(mimeMessage);
+                        } catch (MessagingException e) {
+                            log.error("发送邮件失败: " + e.toString());
+                        }
                     }
                 })
                 .failureHandler(new AuthenticationFailureHandler() {
@@ -126,4 +142,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                 .disable();
     }
+
 }
