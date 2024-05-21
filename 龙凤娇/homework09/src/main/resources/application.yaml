@@ -1,0 +1,19 @@
+spring:
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      username: root
+      password: 111222333
+      url: jdbc:mysql://localhost:3306/example?serverTimeZone=Asia/Shanghai
+  mvc:
+      pathmatch:
+        matching-strategy: ant-path-matcher
+  security:
+    user:
+      name: admin
+      password: 123456
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+server:
+  port: 8090
+
+

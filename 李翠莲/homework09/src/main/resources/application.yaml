@@ -1,0 +1,15 @@
+spring:
+    security:
+       user:
+        name: admin
+        password: 123456
+        datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 613128
+    url: jdbc:mysql://localhost:8080/example?serverTimezone=GMT%2B8&useSSL=true
+
+server:
+  port: 8001
+  mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
