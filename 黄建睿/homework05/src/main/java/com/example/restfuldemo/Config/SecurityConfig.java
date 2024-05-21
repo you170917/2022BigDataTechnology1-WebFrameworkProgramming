@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.data.redis.core.ListOperations;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -39,7 +41,11 @@ import java.util.Date;
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
+    AccountService accountService;
+    @Autowired
      JavaMailSender javaMailSender;
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
@@ -83,6 +89,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                             log.error("发送邮件失败: " + e.toString());
                         }
                     }
+                    ListOperations<String, String> opsForList = stringRedisTemplate.opsForList();
+                    Date date = new Date();
+                    opsForList.leftPush("LoginInfo", "您的账号已于 " + date.toString() + "进行登录!");
                 })
                 .failureHandler(new AuthenticationFailureHandler() {
                     @Override
