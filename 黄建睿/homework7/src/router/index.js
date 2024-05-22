@@ -1,7 +1,8 @@
 import Vue from "vue";  //导入 Vue 模块
 import VueRouter from "vue-router";
 import User from "@/views/User.vue";
-import NotFound from "@/views/NotFound.vue"; // 第二步：导入 VueRouter 模块
+import NotFound from "@/views/NotFound.vue";
+import MyUser from "@/views/MyUser.vue"; // 第二步：导入 VueRouter 模块
 Vue.use(VueRouter); //第三步：Vue.use 安装注册
 const routes = [
     {
@@ -15,7 +16,11 @@ const routes = [
     {
         path:"*",
         component: NotFound
-    }
+    },
+    {
+        path:"/MyUser",
+        component: MyUser
+    },
 ]
 const router =new VueRouter({
     router: routes

@@ -1,0 +1,34 @@
+spring:
+  security:
+    user:
+    name: admin
+    password: 123456
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 613128
+    url: jdbc:mysql://localhost:8080/example?serverTimezone=GMT%2B8&useSSL=true
+
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 3491685031@qq.com #这里填你的邮箱
+    password: hqmahleajjcfdagb #这里填你的授权码
+    default-encoding: UTF-8
+  file:
+   upload:
+    url: "C:\Users\1\Desktop\图片"
+
+
+server:
+  port: 8001
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+
+
+
