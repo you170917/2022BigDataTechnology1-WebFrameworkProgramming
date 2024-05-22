@@ -1,0 +1,11 @@
+spring:
+  mail:
+   host: smtp.qq.com
+   port: 587
+   username: 2878070097@qq.com
+   password: fvlprprrhjaidcdh
+   default-encoding: UTF-8
+
+   file:
+     upload:
+      url: C:\Users\孟星宇\Desktop\tp

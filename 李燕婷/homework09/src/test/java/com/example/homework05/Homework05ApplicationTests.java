@@ -9,11 +9,11 @@ class Homework05ApplicationTests {
 
     @Test
     void contextLoads() {
- BCryptPasswordEncoder bCryptPasswordEncoder = new
-         BCryptPasswordEncoder();
- for (int i = 0; i < 2; i++) {
- System.out.println(bCryptPasswordEncoder.encode("921328"));
-  }
-  }
+        BCryptPasswordEncoder bCryptPasswordEncoder = new
+                BCryptPasswordEncoder();
+        for (int i = 0; i < 2; i++) {
+            System.out.println(bCryptPasswordEncoder.encode("921328"));
+        }
+    }
 
 }

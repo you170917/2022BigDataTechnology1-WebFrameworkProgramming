@@ -1,16 +1,16 @@
 package com.example.restful.model;
 
 import lombok.Data;
+import lombok.var;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.management.relation.Role;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
+import com.example.restful.model.Role;
 @Data
 public class Account implements UserDetails {
     private Integer id;
@@ -22,7 +22,7 @@ public class Account implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
             ArrayList<SimpleGrantedAuthority> authorities = new ArrayList<>();
-            for (Role role : roles) {
+            for (var role : roles) {
                 authorities.add(new SimpleGrantedAuthority("ROLE_" +
                         role.getRoleName()));
             }
