@@ -10,6 +10,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.core.ListOperations;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.authentication.*;
@@ -33,7 +35,8 @@ public class SecurityConfig {
     AccountService accountService;
     @Autowired
     JavaMailSender javaMailSender;
-
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
         auth.userDetailsService(accountService);
@@ -74,6 +77,10 @@ public class SecurityConfig {
                         message.setSentDate(date); //设置邮件发送日期
                         message.setText("您的账号已于 " + date.toString() + " 进行登录!"); //设置邮件的正文
                         javaMailSender.send(message); //发送邮件
+
+                        ListOperations<String, String> opsForList = stringRedisTemplate.opsForList();
+                        date = new Date();
+                        opsForList.leftPush("LoginInfo", "您的账号已于 " + date.toString() + " 进行登 录!");
 
 //                        try {
 //                            jakarta.mail.internet.MimeMessage mimeMessage = javaMailSender.createMimeMessage();
