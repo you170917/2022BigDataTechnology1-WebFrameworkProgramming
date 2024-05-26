@@ -24,7 +24,7 @@ export default {
   methods: {
     getAllUsers(){
       this.getRequest("/AllUsers").then(resp => {
-        if (resp.data.code == 200){
+        if (resp.data.code === 200){
 // console.log(resp)
           this.$message.success("刷新成功!");
           this.users = resp.data.data;
@@ -36,8 +36,8 @@ export default {
     getUserById(){
       this.getRequest(`/user/${this.queryId}`).then(resp => {
         console.log(resp);
-        if (resp.data.code == 200){
-          if (this.userInfo.length == 0){
+        if (resp.data.code === 200){
+          if (this.userInfo.length === 0){
             this.userInfo.push(resp.data.data);
           }else {
             this.userInfo.length =0;
@@ -53,7 +53,7 @@ export default {
         username: this.addUserParams.username,
         address: this.addUserParams.address
       }).then(resp => {
-        if (resp.data.code == 200){
+        if (resp.data.code === 200){
           console.log(resp);
           this.$message.success("添加成功!")
         }else {
@@ -67,7 +67,7 @@ export default {
         username: this.updateUserParams.username,
         address: this.updateUserParams.address
       }).then(resp => {
-        if (resp.data.code == 200){
+        if (resp.data.code === 200){
           console.log(resp);
           this.$message.success("更新成功!");
         }else {
@@ -79,7 +79,7 @@ export default {
       this.deleteRequest("/user", {
         id: this.deleteId
       }).then(resp => {
-        if (resp.data.code == 200){
+        if (resp.data.code === 200){
           this.$message.success("删除成功!")
         }else {
           this.$message.error("删除失败!");

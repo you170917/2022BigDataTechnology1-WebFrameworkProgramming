@@ -1,4 +1,8 @@
 spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
@@ -11,5 +15,16 @@ spring:
     user:
       name: admin
       password: 123456
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 2176044349@qq.com #这里填你的邮箱
+    password: daycbygsrmuwdihc #这里填你的授权码
+    default-encoding: UTF-8
+# 文件上传目录
+file:
+  upload:
+    url: C:\Users\21760\Desktop\a
 mybatis-plus:
   mapper-locations: classpath:/mapper/*.xml
+
