@@ -33,3 +33,21 @@ export const deleteRequest = (url, params) =>{
         params: params, //该请求接收查询参数,这里需要使用 params 参数
     })
 }
+export const postKeyValueRequest=(url, params) =>{
+    return axios({
+        method: "post",
+        url: `${baseUrl}${url}`,
+        data: params,
+        transformRequest: [function (data) {
+            let ret = '';
+            for (let i in data){
+                ret += encodeURIComponent(i)+"="+ encodeURIComponent(data[i]) +
+                    "&";
+            }
+            return ret;
+        }],
+        header: {
+            "Content-Type": "application/x-www-urlencoded"
+        }
+    })
+}
