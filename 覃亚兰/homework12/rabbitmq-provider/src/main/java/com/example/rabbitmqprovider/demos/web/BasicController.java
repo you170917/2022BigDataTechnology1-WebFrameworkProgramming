@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.homework05.demos.web;
+package com.example.rabbitmqprovider.demos.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
