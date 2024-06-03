@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.authentication.*;
@@ -34,6 +35,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     AccountService accountService;
     @Autowired
     JavaMailSender javaMailSender;
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
