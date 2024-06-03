@@ -195,19 +195,18 @@ export default {
         }
       })
     },
-
-async deleteUserById() {
-  await deleteRequest("/user", {
-    id: this.deleteId
-  }).then(resp => {
-    if (resp.data.code === 200) {
-      this.$message.success("删除成功!")
-    } else {
-      this.$message.error("删除失败!");
-    }
-  })
-}
-}
+    async deleteUserById() {
+      await deleteRequest("/user", {
+        id: this.deleteId
+      }).then(resp => {
+       if (resp.data.code === 200) {
+         this.$message.success("删除成功!")
+       } else {
+         this.$message.error("删除失败!");
+       }
+      })
+    },
+  }
 }
 </script>
 <style scoped>

@@ -1,4 +1,5 @@
 import axios from "axios";
+axios.defaults.withCredentials = true;
 const baseUrl= "/api";
 // 封装 GET 请求
 export const getRequest = async (url, params) => {
@@ -34,4 +35,23 @@ export const deleteRequest = async (url, params) => {
     // })
     return await axios.delete(baseUrl + url, params)
 
+}
+
+export const postKeyValueRequest=(url, params) =>{
+    return axios({
+        method: "post",
+        url: `${baseUrl}${url}`,
+        data: params,
+        transformRequest: [function (data) {
+            let ret = '';
+            for (let i in data){
+                ret += encodeURIComponent(i)+"="+ encodeURIComponent(data[i]) +
+                    "&";
+            }
+            return ret;
+        }],
+        header: {
+            "Content-Type": "application/x-www-urlencoded"
+        }
+    })
 }
