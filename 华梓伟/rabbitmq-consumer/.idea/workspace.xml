@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c2221fa-25f2-4373-9b02-bf51ba4de30e" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/example/rabbitmq/config/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rabbitmq/src/main/java/com/example/rabbitmq/controller/SenderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restful/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restful/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restful/src/main/java/com/example/restful/RestfulApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restful/src/main/java/com/example/restful/RestfulApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restful/src/main/java/com/example/restful/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restful/src/main/java/com/example/restful/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restful/src/main/java/com/example/restful/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restful/src/main/java/com/example/restful/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restful/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../restful/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restful/src/test/java/com/example/restful/RestfulApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restful/src/test/java/com/example/restful/RestfulApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2girKht4QJGPphmZ0dGLnzGG5zV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8c2221fa-25f2-4373-9b02-bf51ba4de30e" name="更改" comment="" />
+      <created>1716191178893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716191178893</updated>
+      <workItem from="1716191180147" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
