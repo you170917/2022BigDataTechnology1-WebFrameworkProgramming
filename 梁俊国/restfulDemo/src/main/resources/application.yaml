@@ -1,0 +1,29 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 3179211045@qq.com
+    password: essuxjitixevddij
+    default-encoding: utf-8
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+file:
+  upload:
+    url: D:\y\y
+
+
+    redis:
+       host: localhost
+       port: 6379
+       password: 123456
+       database: 0
