@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: qylbb247566@
+    url: jdbc:mysql://localhost:3306/example?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher

@@ -1,0 +1,34 @@
+
+
+mybatis-plus:
+mapper-locations: classpath:/mapper/*.xml
+spring:
+  security:
+    user:
+      name: admin
+      password: 123456
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 200208281850.Wjy
+    url: jdbc:mysql://localhost:3306/ylw?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 2990182265@qq.com
+    password:  jzwbqaoydozbdebb
+    default-encoding: UTF-8
+
+  file:
+    upload:
+      url:C:\Users\123\Desktop\test
+  redis:
+    host:
+    port: 6379
+    password: 123456
+    database: 0
+server:
+  port: 8011
