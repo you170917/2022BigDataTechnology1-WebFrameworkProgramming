@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 1313113a
+    url: jdbc:mysql://192.168.20.4:3306/java
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
