@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="homework12" />
+        <module name="rabbitmq-provider" />
+        <module name="rabbitmq-consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="homewo12(2)" target="1.5" />
+      <module name="homework012" target="1.8" />
+      <module name="homework12(2)" target="1.5" />
+      <module name="maven-parent" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

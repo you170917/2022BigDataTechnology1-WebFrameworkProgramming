@@ -1,0 +1,7 @@
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  spring:
+    security:
+      user:
+        name: admin
+        password: 123456
