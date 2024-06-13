@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class MybatisPlusApplicationTests {
 
+<<<<<<< HEAD
     @Autowired
     UserMapper userMapper;
     @Autowired
@@ -111,4 +112,10 @@ class MybatisPlusApplicationTests {
         user.setGender("女");
         userService.updateById(user);
     }
+=======
+    @Test
+    void contextLoads() {
+    }
+
+>>>>>>> origin/main
 }
