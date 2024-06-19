@@ -1,0 +1,14 @@
+# åºç¨æå¡ WEB è®¿é®ç«¯å£
+server.port=8080
+spring:
+mail:
+host: smtp.qq.com
+port: 587
+username: 2044663501@qq.com
+password: pvbawxagzeascbdh
+default-encoding: UTF-8
+file:
+upload:
+url: C:\Users\linwei\Desktop\test
+mybatis-plus:
+mapper-locations: classpath:/mapper/*.xml

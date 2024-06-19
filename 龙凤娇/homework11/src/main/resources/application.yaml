@@ -1,0 +1,32 @@
+spring:
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      username: root
+      password: 111222333
+      url: jdbc:mysql://localhost:3306/example?serverTimeZone=Asia/Shanghai
+  mvc:
+      pathmatch:
+        matching-strategy: ant-path-matcher
+  security:
+    user:
+      name: admin
+      password: 123456
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 3220856574@qq.com
+    password: hyqzddmrkhutdcib
+    default-encoding: UTF-8
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+file:
+  upload:
+    url: D:\six\you
+server:
+  port: 8090
+
+

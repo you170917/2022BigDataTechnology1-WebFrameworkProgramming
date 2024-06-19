@@ -1,0 +1,39 @@
+server:
+ port: 8082
+
+spring:
+ datasource:
+  type: com.alibaba.druid.pool.DruidDataSource
+  username: root
+  password: waly7948
+  url: jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+
+ security:
+  user:
+   name: admin
+   password: 123456
+
+ mvc:
+  path match:
+   matching-strategy: ant-path-matcher
+
+ mail:
+  host: smtp.qq.com
+  port: 587 #465
+  username: 2048097948@qq.com #adpim9rc7k@163.com
+  password: fofizuridvlwccfb #JRWJYOXHDNCDCKHE
+  default-encoding: UTF-8
+
+ servlet:
+  multipart:
+   max-file-size: 10MB        # 设置单个文件最大大小为10MB
+   max-request-size: 100MB    # 设置多个文件最大大小为10MB
+
+
+mybatis-plus:
+ mapper-locations: classpath:/mapper/*.xml
+
+file:
+ upload:
+  url: C:\Users\ShuangTian\Desktop\abc
+

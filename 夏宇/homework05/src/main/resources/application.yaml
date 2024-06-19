@@ -1,0 +1,8 @@
+# åºç¨æå¡ WEB è®¿é®ç«¯å£
+  server.port=8080
+spring:
+datasource:
+type: com.alibaba.druid.pool.DruidDataSource
+username: root
+password: 123456
+url: jdbc:mysql://localhost:3306/example?serverTimeZone=Asia/Shanghai

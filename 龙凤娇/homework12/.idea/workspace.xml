@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="homework12" />
+      <module name="rabbitmq-consumer" />
+      <module name="rabbitmq-provider" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7db26b9-63e1-46fe-a493-a7250ed4c2a6" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../homework05/src/main/java/com/example/homework05/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework05/src/main/java/com/example/homework05/util/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-provider/src/main/java/com/example/rabbitmqprovider/config/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/rabbitmq-consumer/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maven-parent/rabbitmq-provider/src/main/java/com/example/rabbitmqprovider/controller/SenderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework05/src/main/java/com/example/homework05/Homework05Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/src/main/java/com/example/homework05/Homework05Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework05/src/main/java/com/example/homework05/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/src/main/java/com/example/homework05/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework05/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework05/src/test/java/com/example/homework05/Homework05ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework05/src/test/java/com/example/homework05/Homework05ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework08/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../homework08/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework08/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../homework08/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework09/src/main/java/com/example/homework09/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework09/src/main/java/com/example/homework09/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework10/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../homework10/src/views/Home.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2gnmJQtbdZCZ2mvcSrQcXGoBgH4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "jbr-17",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.RabbitmqConsumerApplication">
+    <configuration name="RabbitmqConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rabbitmqconsumer.RabbitmqConsumerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rabbitmqconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rabbitmqprovider.RabbitmqProviderApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rabbitmqprovider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RabbitmqConsumerApplication" />
+        <item itemvalue="Spring Boot.RabbitmqProviderApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c7db26b9-63e1-46fe-a493-a7250ed4c2a6" name="更改" comment="" />
+      <created>1716341647095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716341647095</updated>
+      <workItem from="1716341648141" duration="1579000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnloadedModulesList">
+    <module name="demo" />
+  </component>
+</project>
