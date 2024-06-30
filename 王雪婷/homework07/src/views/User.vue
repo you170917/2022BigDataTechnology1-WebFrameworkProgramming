@@ -17,12 +17,12 @@
     <div>
       请输入要添加的用户信息：
       <div>
-        user
-        <input v-model="user">
+        username
+        <input v-model="addUserParams.username">
       </div>
       <div>
         address
-        <input v-model="address">
+        <input v-model="addUserParams.address">
       </div>
     </div>
     <button v-on:click="addUser">添加用户</button>
@@ -31,15 +31,15 @@
       请输入要修改的用户信息：
       <div>
         id
-        <input v-model="id">
+        <input v-model="updateUserParams.id">
       </div>
       <div>
-        user
-        <input v-model="user">
+        username
+        <input v-model="updateUserParams.username">
       </div>
       <div>
         address
-        <input v-model="address">
+        <input v-model="updateUserParams.address">
       </div>
     </div>
     <button v-on:click="updateUser">修改用户</button>
@@ -54,58 +54,67 @@
   </div>
 </template>
 <script>
-import axios from "axios";
 export default {
   name: "UserPage",
-  data(){
-    return{
+  data() {
+    return {
       users: null,
       queryId: null,
       userById: null,
-      user: null,
-      address: null,
+      addUserParams: {
+        username: null,
+        address: null,
+      },
+      updateUserParams: {
+        id: null,
+        username: null,
+        address: null,
+      },
       id: null,
       deleteId: null
     }
   },
   methods: {
-    getAllUsers(){
-      axios.get("http://localhost:8081/AllUsers")
-          .then(resp => {
-            console.log(resp);
-            this.users = resp.data;
-          })
+    getAllUsers() {
+      this.getRequest("/AllUsers").then(resp => {
+        console.log(resp);
+        if (resp.status == 200) {
+          this.users = resp.data.data; //通过 resp.data.data 拿到返回数据
+        } else {
+          alert(resp.data.msg);
+        }
+      })
     },
-    getUserById(){
-      axios.get(`http://localhost:8081/user/${this.queryId}`)
-          .then(resp => {
-            console.log(resp);
-            this.userById = resp.data;
-          })
+    getUserById() {
+      this.getRequest(`/user/${this.queryId}`).then(resp => {
+        console.log(resp);
+        if (resp.status == 200) {
+          this.userById = resp.data.data;
+        } else {
+          alert(resp.data.msg);
+        }
+      })
     },
     addUser(){
-      axios.post("http://localhost:8081/user",
-          {
-            user: this.user,
-            address: this.address
-          }).then(resp => {
+      this.postRequest("/user", {
+        username: this.addUserParams.username,
+        address: this.addUserParams.address
+      }).then(resp => {
         console.log(resp);
       })
     },
     updateUser(){
-      axios.put("http://localhost:8081/user",{
-        id: this.id,
-        user: this.user,
-        address: this.address
-      }).then( resp => {
+      this.putRequest("/user", {
+        id: this.updateUserParams.id,
+        username: this.updateUserParams.username,
+        address: this.updateUserParams.address
+      }).then(resp => {
         console.log(resp);
       })
     },
-    deleteUser(){
-      axios.delete("http://localhost:8081/user", {
-        params: {
-          id: this.deleteId
-        }
+    deleteUser() {
+      this.deleteRequest("/user", {
+        id: this.deleteId
       }).then(resp => {
         console.log(resp);
       })

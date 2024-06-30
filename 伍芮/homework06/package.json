@@ -1,0 +1,17 @@
+{
+  "name": "homework06",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "vue": "^2.7.14"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.5.7",
+    "@rsbuild/plugin-vue2": "^0.5.7"
+  }
+}

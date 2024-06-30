@@ -1,5 +1,6 @@
 package com.example.restful.controller;
 
+import com.example.restful.model.LoginRequest;
 import com.example.restful.model.User;
 import com.example.restful.service.UserService;
 import com.example.restful.util.Result;
@@ -32,6 +33,23 @@ public class UserController {
     public Result getUserById(@PathVariable("id") Integer id) {
         User user = userService.getById(id);
         return Result.success(user);
+    }
+    @PostMapping("/login")
+    @CrossOrigin(origins = "http://localhost:8081")
+    public Result Login(@RequestBody LoginRequest string){
+        String username = string.username;
+        String password = string.password;
+        User[] users = userService.list().toArray(new User[0]);
+        for (User us:users) {
+            if (us.getUsername().equals(username)){
+                if (us.getPassword().equals(password)){
+                    return Result.success("登录成功");
+                }else {
+                    return Result.error("用户名或密码错误");
+                }
+            }
+        }
+        return Result.error("用户名没有发现");
     }
     @PostMapping("/user")
     @CrossOrigin(origins = "http://localhost:8081")

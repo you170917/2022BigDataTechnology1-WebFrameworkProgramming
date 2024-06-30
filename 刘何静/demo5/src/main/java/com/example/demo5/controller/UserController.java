@@ -15,7 +15,8 @@ public class UserController {
      * 查询所有用户
      * @return
      */
-    @GetMapping("/AllUsers")
+    @PostMapping("/user/all")
+    @CrossOrigin(origins = "http://localhost:8080")
     public List<User> getAllUsers(){
         return userService.list();
     }
@@ -24,7 +25,7 @@ public class UserController {
      * @param id
      * @return
      */
-    @GetMapping("/user/{id}")
+    @GetMapping("/user/get/{id}")
     public User getUserById(@PathVariable("id") Integer id){
         User user = userService.getById(id);
         return user;
@@ -34,7 +35,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @PostMapping("/user")
+    @PostMapping("/user/add")
     public String addUser(@RequestBody User user){
         if (userService.save(user)){
             return "插入用户成功！";
@@ -46,7 +47,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @PutMapping("/user")
+    @PostMapping("/user/up")
     public String updateUser(@RequestBody User user){
         if (userService.updateById(user)){
             return "更新用户成功！";
@@ -58,7 +59,7 @@ public class UserController {
      * @param id
      * @return
      */
-    @DeleteMapping("/user")
+    @PostMapping("/user/del")
     public String deleteUserById(Integer id){
         if (userService.removeById(id)){
             return "删除用户成功！";
