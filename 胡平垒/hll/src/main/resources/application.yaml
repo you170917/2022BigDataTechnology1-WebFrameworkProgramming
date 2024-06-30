@@ -1,0 +1,7 @@
+spring:
+mail:
+host: smtp.qq.com
+port: 587
+username: 3461562237@qq.com #这里填你的邮箱
+password: xxxxxxxxxxxxxxxx #这里填你的授权码
+default-encoding: UTF-8
