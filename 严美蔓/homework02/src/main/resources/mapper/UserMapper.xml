@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.homework02.bean.em2">
+    <select id="com.example.homework02.bean.userinterface">
+        SELECT * FROM mydb
+    </select>
+
+
+<select id="getUserById" resultType="com.example.mybatis.bean.Users">
+select * from em2 where id = #{id};
+</select>
+
+<insert id="addUser" parameterType="com.example.mybatis.bean.Users">
+insert into em2(username, age,kc_id) values (#{username}, #{age},#{kc_id});
+</insert>
+<update id="updateUser" parameterType="com.example.mybatis.bean.Users">
+update em2 set username = #{username} where em2.id = #{id};
+</update>
+<delete id="deleteUser" parameterType="java.lang.Integer">
+delete from em2 where em2.id = #{id};
+</delete>
+        </mapper>
