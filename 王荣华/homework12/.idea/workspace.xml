@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf33b19f-fc30-44fd-9a8f-423598cd7717" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/mapper/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/java/com/example/homework06/util/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework06/src/main/resources/mapper/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework09/src/main/java/com/example/homework09/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework10_/src/main/java/com/example/homework10_/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework12-consumer/src/main/java/com/example/homework12consumer/receiver/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatisplusdemo/src/main/java/com/example/mybatisplusdemo/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mybatisplusdemo/src/main/java/com/example/mybatisplusdemo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework09/src/main/java/com/example/homework09/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework09/src/main/java/com/example/homework09/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework09/src/main/java/com/example/homework09/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework09/src/main/java/com/example/homework09/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework10/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../homework10/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework10_/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework10_/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework10_/src/main/java/com/example/homework10_/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework10_/src/main/java/com/example/homework10_/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework10_/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework10_/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework10_/src/test/java/com/example/homework10_/Homework10_ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework10_/src/test/java/com/example/homework10_/Homework10_ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework11/src/main/java/com/example/homework11/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/src/main/java/com/example/homework11/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework11/src/main/java/com/example/homework11/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/src/main/java/com/example/homework11/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework11/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework11/src/test/java/com/example/homework11/Homework11ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../homework11/src/test/java/com/example/homework11/Homework11ApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2giopfKuxSzddSkJWemZkam5efP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf33b19f-fc30-44fd-9a8f-423598cd7717" name="Changes" comment="" />
+      <created>1716189944616</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716189944616</updated>
+      <workItem from="1716189945792" duration="553000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
