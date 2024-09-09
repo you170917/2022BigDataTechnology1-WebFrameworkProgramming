@@ -1,0 +1,24 @@
+# 应用服务 WEB 访问端口
+#spring:
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    username: root
+#    password: 472829
+#    url: jdbc:mysql://localhost:3306/example?serviceTimeZone=Asia/Shanghai
+#
+
+spring:
+mail:
+host: smtp.qq.com
+port: 587
+username: 486904116@qq.com #这里填你的邮箱
+password:  yfxgxenasjyccaca
+#这里填你的授权码
+default-encoding: UTF-8
+
+
+
+# 文件上传目录
+file:
+upload:
+url: C:\Users\Default\Music
